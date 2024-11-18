@@ -11,8 +11,6 @@
             --green: #64ffda;
             --font-mono: 'SF Mono', 'Fira Code', monospace;
             --font-sans: 'Calibre', 'San Francisco', sans-serif;
-            --fz-heading: 32px;
-            --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
 
         /* Reset & Base Styles */
@@ -138,11 +136,7 @@
         }
 
         /* About Section */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 3fr 2fr;
-            gap: 50px;
-        }
+      
 
         .skills-list {
             display: grid;
@@ -180,7 +174,6 @@
             background-color: var(--light-navy);
             padding: 2rem 1.75rem;
             border-radius: 4px;
-            transition: var(--transition);
         }
 
         .project-card:hover {
@@ -201,7 +194,7 @@
 
         .project-links a {
             color: var(--light-slate);
-            transition: var(--transition);
+        
         }
 
         .project-links a:hover {
@@ -269,22 +262,6 @@
             color:var(--green); ;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.5s ease forwards;
-            opacity: 0;
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -298,9 +275,5 @@
 
             .about-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
             }
         }
